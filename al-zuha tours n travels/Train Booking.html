@@ -224,18 +224,19 @@ bulk ticket bookings, seat coordination, and smooth travel planning for large gr
 <!-- INQUIRY FORM -->
 <section class="train-inquiry">
     <h2>Train Booking Inquiry</h2>
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="tel" placeholder="Mobile Number" required>
+     <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="46c537f4-907c-4b45-bdc2-ab046a635fa8">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
 
         <div class="form-row">
-            <input type="text" placeholder="From Station" required>
-            <input type="text" placeholder="To Station" required>
+            <input type="text" name="from_station" placeholder="From Station" required>
+            <input type="text" name="to_station" placeholder="To Station" required>
         </div>
 
-        <input type="date" required>
+        <input type="date" name="travel_date" required>
 
-        <select required>
+        <select name="class" required>
             <option>Select Class</option>
             <option>Sleeper (SL)</option>
             <option>3AC</option>
@@ -244,7 +245,7 @@ bulk ticket bookings, seat coordination, and smooth travel planning for large gr
             <option>Chair Car</option>
         </select>
 
-        <textarea placeholder="Additional Message / Passenger Details"></textarea>
+        <textarea name="message" placeholder="Additional Message / Passenger Details"></textarea>
 
         <button type="submit">Submit Inquiry</button>
     </form>
