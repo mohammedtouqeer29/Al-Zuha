@@ -126,10 +126,10 @@
 <!-- INQUIRY FORM -->
 <section class="forex-inquiry">
     
-
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="tel" placeholder="Mobile Number" required>
+ <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="46c537f4-907c-4b45-bdc2-ab046a635fa8">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
 
         <select required>
             <option>Select Travel Country</option>
