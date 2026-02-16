@@ -196,20 +196,22 @@
 <!-- INQUIRY FORM -->
 <section class="hotel-inquiry">
     <h2>Hotel Booking Inquiry</h2>
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="tel" placeholder="Mobile Number" required>
-        <input type="text" placeholder="Destination / City" required>
+    
+       <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="46c537f4-907c-4b45-bdc2-ab046a635fa8">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="destination" placeholder="Destination / City" required>
 
         <label>Check-In Date</label>
-        <input type="date" required>
+        <input type="date" name="check_in_date" required>
 
         <label>Check-Out Date</label>
-        <input type="date" required>
+        <input type="date" name="check_out_date" required>
 
-        <input type="number" placeholder="Number of Guests" required>
-        <input type="text" placeholder="Budget Range (Optional)">
-        <textarea placeholder="Any special requirements"></textarea>
+        <input type="number" name="guests" placeholder="Number of Guests" required>
+        <input type="text" name="budget_range" placeholder="Budget Range (Optional)">
+        <textarea name="special_requirements" placeholder="Any special requirements"></textarea>
 
         <button type="submit">Submit Inquiry</button>
     </form>
