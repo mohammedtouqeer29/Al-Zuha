@@ -198,10 +198,11 @@
 <!-- INQUIRY FORM -->
 <section class="visa-inquiry">
     <h2>Passport & Visa Inquiry Form</h2>
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="tel" placeholder="Mobile Number" required>
-        <input type="email" placeholder="Email Address">
+      <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="94e9a95a-39b5-4bb8-b1bc-ff13561d5894">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="email" name="email" placeholder="Email Address">
 
         <select required>
             <option>Select Service</option>
