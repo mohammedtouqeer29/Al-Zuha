@@ -1,0 +1,1979 @@
+/* Basic styles for Al-Zuha Tours and Travels */
+:root{
+  --bg:#fff;
+  --muted:#6b7280;
+  --accent:#0066a4;
+  --accent-2:#0b8f49;
+  --max-width:1100px;
+  --radius:10px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:#111;line-height:1.5}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 1rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0;color: #e6eef7;}
+
+  /* changed*/
+
+
+
+
+.hero-video {
+background-color: #000;
+}
+
+
+
+
+.hero-header {
+    background: #000000;
+    width: 100%;
+        padding: 0.1rem 0;
+    display: flex;
+    align-items:center;
+    overflow-x: hidden;
+
+}
+
+/* LOGO LEFT SIDE */
+.hero-logo {
+    height: 90px; 
+    margin-left: 16px;
+    max-width: 160px;
+    width: auto;
+}
+
+/* Ensure images scale responsively across pages */
+img{max-width:100%;height:auto;display:block}
+
+/* Make containers avoid overflow on small screens */
+.container{padding-left:1rem;padding-right:1rem}
+
+/* CENTER TEXT */
+.hero-text {
+    flex: 1;
+    text-align:left;
+  
+
+     margin-left: 20px;  
+    margin-right: 16px; /* push text center even with left logo */
+}
+
+.hero-text h1 {
+    font-size: 30px;
+
+     font-family: 'Cinzel', serif;
+    font-weight: 700;
+
+    
+
+     margin-left: 20px;  
+    font-weight: 700;
+    color: #d4af37;
+    margin: 0;
+}
+
+/* GOLD UNDERLINE */
+.hero-line {
+    width: 230px;
+    height: 3px;
+    background: #d4af37;
+    margin: 1px 0;   /* removes auto-centering */
+    border-radius: 5px;
+}
+
+
+/* SUBTITLE */
+.hero-text p {
+    color: #d4af37;
+    letter-spacing: 3px;
+
+
+     font-family: 'Cinzel', serif;
+
+
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+/* changed till here*/
+
+
+.brand{display:flex;align-items:center;gap:0.5rem;font-weight:700;color:var(--accent);text-decoration:none}
+.brand .logo{height: 40px;;width: 100px;;display:block}
+.brand .logo-wide{height: 40px;;width: 100px;;display:block}
+
+.menu-toggle{display:none;background:transparent;border:0;font-size:1.2rem}
+.main-nav a{margin-left:1rem;color:inherit;text-decoration:none}
+
+/* Hero */
+.hero{position:relative;height:88vh;min-height:420px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+
+
+
+
+
+.hero-overlay{position:relative;z-index:2;text-align:center;color: #000000;padding:1rem}
+.hero-overlay h1{font-size:1.2rem;margin:0 0 .5rem;  }
+
+
+
+
+
+
+
+
+
+.lead{opacity:.95;text-align: center ;    color: #d4af37;
+    letter-spacing: 3px;
+
+
+     font-family: 'Cinzel', serif;
+      text-decoration:underline;
+
+
+    font-size: 16px;
+    margin-top: 370px;
+
+display:inline-block;padding:.6rem 1rem;background:#d4af37;border-radius:6px;color:inherit;text-decoration:none
+
+
+
+
+
+
+
+}
+.btn{display:inline-block;padding:.6rem 1rem;background:#f3f4f6;border-radius:6px;color:inherit;text-decoration:none}
+.btn.primary{background:var(--accent);color:white}
+.btn.whatsapp{background:#25D366;color:#fff}
+
+.people-anim{position:absolute;left:0;right:0;bottom:10%;height:80px;pointer-events:none;z-index:1;background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0) 100%)}
+
+/* Sections */
+.section{padding:3rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1rem}
+.cert-card{background:#fff;border-radius:8px;padding:1rem;box-shadow:0 6px 18px rgba(16,24,40,.06);text-align:center}
+.cert-img{height:90px;background:#e6eef7;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.note{font-size:.9rem;color:var(--muted);margin-top:.75rem}
+
+.packages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1rem}
+.package-card{background:#fff;border-radius:10px;padding:1rem;border:1px solid #eef2f7}
+.package-card h3{margin-top:0}
+.price{font-weight:700;color:var(--accent)}
+.all-packages{margin-top:1.5rem}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.socials a{display:inline-block;margin-right:.6rem;text-decoration:none;color:var(--accent)}
+
+.site-footer{background:#0f1724;color:#fff;padding:1rem 0;margin-top:2rem}
+.site-footer p{margin:0;text-align:center}
+.site-header{background:#2e2c2c;box-shadow:0 2px 8px rgba(0,0,0,.05);position:sticky;top:0;z-index:10}
+.muted{color:var(--muted)}
+
+/* Responsive */
+@media (max-width:800px){
+  .hero{height:55vh}
+  .menu-toggle{display:block}
+    .main-nav{display:none}
+    /* full-screen overlay nav on mobile */
+    .main-nav.open{
+        display:flex;
+        flex-direction:column;
+        gap:1rem;
+        background: rgba(0,0,0,0.92);
+        color: #d4af37;
+        padding: 2.5rem 1.5rem;
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-nav.open a{color:#d4af37;font-size:1.25rem}
+    .menu-toggle{color:#d4af37;font-size:1.6rem}
+  .header-inner{position:relative}
+  .contact-grid{grid-template-columns:1fr}
+    /* header adjustments for smaller screens */
+    .hero-logo{height:64px;margin-left:12px}
+    .hero-text{margin-right:12px;margin-left:12px}
+    .hero-text h1{font-size:22px}
+}
+
+/* Prevent horizontal scroll on small screens */
+html,body{overflow-x:hidden}
+
+@media (max-width:480px){
+  .brand .logo{height:40px ;width: 50px;}
+  .brand .logo-wide{height:40px ;width: 20px;}
+  .header-inner{padding:0.35rem 0}
+}
+
+/* Small animations */
+@keyframes float-left-right{
+  0%{transform:translateX(-10%)}
+  50%{transform:translateX(10%)}
+  100%{transform:translateX(-10%)}
+}
+.people-anim::after{content:"";position:absolute;left:0;right:0;height:40px;background:transparent;background-image:linear-gradient(90deg, rgba(255,255,255,.02) 0%, rgba(255,255,255,.04) 50%, rgba(255,255,255,.02) 100%);transform:translateX(-5%);animation:float-left-right 8s linear infinite}
+
+
+
+
+
+
+
+
+.section-container-packages h2 {
+    padding: 80px 10%;
+   color: #d4af37;
+}
+
+
+
+
+
+/*changed*/
+
+.logo-box {
+    background: #000000;
+     height: 250px;  /*changed*/
+    padding: 1px 1px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.logo-main {
+    font-size: 38px;
+    font-weight: 700px;
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: linear-gradient(90deg, #d4af37, #f7e27f, #b8860b);
+  
+    color: transparent;
+}
+
+/* FULL-WIDTH LINE MATCHING THE TEXT BELOW */
+.logo-line {
+    width: 100%;                   /* extends to the width of the logo-box */
+    max-width: 260px;              /* perfect size for “TOURS AND TRAVELS” */
+    height: 3px;
+    margin: 8px auto 15px;
+    background: linear-gradient(90deg, #d4af37, #f7e27f, #b8860b);
+    border-radius: 2px;
+}
+
+.logo-sub {
+    font-size: 14px;
+    letter-spacing:5px;
+    margin-top: 8px;
+    font-family: "Georgia", serif;
+    background: linear-gradient(90deg, #d4af37, #f7e27f, #b8860b);
+    
+    color: transparent;
+}
+/*changed*/
+
+
+
+
+/*changed*/
+
+/*changed*/
+
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f5f5f5;
+}
+
+.packages-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    background: #fff;
+    padding-bottom: 25px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+
+.package-card a{
+    text-decoration: none;
+    color:inherit;
+    
+}
+
+
+
+
+
+
+
+.package-card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.25);
+}
+
+.image-wrapper {
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.4s ease;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.package-card:hover img {
+    transform: scale(1.08);
+}
+
+.package-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.package-card p {
+    margin: 0 20px 20px;
+    color: #4b4b4b;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.separator {
+    width: 90%;
+    height: 1px;
+    background: #ddd;
+    margin: 15px auto;
+}
+
+.info {
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn {
+    margin: 20px;
+    width: 85%;
+    padding: 12px 0;
+    background: #d4af37;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #b9922b;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .packages-section {
+        padding: 20px;
+    }
+    .package-card {
+        width: 100%;
+        max-width: 380px;
+    }
+}
+
+
+
+
+
+
+
+
+/* FOOTER MAIN  changed 11111111111111111111111111 */
+/* FULL FOOTER BACKGROUND */
+.main-footer {
+    width: 100%;
+    background: #000000;   /* full black, no white box */
+    color: #ffffff;
+    padding: 10px 0 20px 0;
+    margin-top: 10px;
+    margin-bottom: 0.1px; /* space for floating buttons */
+}
+
+/* TWO COLUMN LAYOUT */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 30px;
+}
+
+@media (max-width:800px){
+    .footer-container{flex-direction:column;gap:20px;padding:0 16px}
+    .footer-right{width:100%;padding:0}
+    .footer-left{width:100%}
+    .footer-right iframe{width:100%;height:350px;box-sizing:border-box}
+    .map-overlay{height:350px;top:0;width:100%}
+}
+
+/* LEFT SECTION */
+.footer-left h2,
+.footer-right h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-left p {
+    margin: 8px 0;
+    color: #ddd;
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer-left span {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-left h3 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* SOCIAL LINKS */
+.social-links a {
+    color: #d4af37;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+/* RIGHT SECTION (MAP) */
+.footer-right {
+    position: relative;
+    width: 50%;
+}
+
+.footer-right iframe {
+    width: 100%;
+    height: 260px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* CLICKABLE MAP LAYER */
+.map-overlay {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 260px;
+    z-index: 5;
+    border-radius: 12px;
+}
+
+/* COPYRIGHT BAR */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+}
+
+
+
+
+.main-footer {
+    width: 100%;
+    background: #000;
+    display: block;
+}
+
+
+
+
+html.footer-container {
+    padding: 0;
+    margin: 0;
+    background: #000;
+
+     width: 100%;
+    background: #000000;
+    display: block;
+}
+
+
+
+
+
+ /* video shade */
+
+
+
+ /* vedio shade */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0; /* top:0; bottom:0; left:0; right:0 */
+    pointer-events: none;
+
+    background:
+        /* TOP shade */
+        linear-gradient(to bottom, rgba(0,0,0,1), transparent 10%),
+        /* BOTTOM shade */
+        linear-gradient(to top, rgba(0,0,0,1), transparent 10%);
+
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* Floating Call Button (Left Side) */
+.floating-call {
+    position: fixed;
+    right:20px;
+    bottom: 90px;
+    background: #d4af37;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.floating-call:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Floating WhatsApp Button (Right Side) */
+.floating-whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background: #25D366;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    background: #1eb851;
+}
+
+
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+}
+
+.certification-image {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.certification-image:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile responsive certifications */
+@media (max-width: 768px) {
+    .certifications-container {
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+    }
+    
+    .certification-image {
+        width: 200px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications-container {
+        gap: 1rem;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .certification-image {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  css standard page - UMRAH PACKAGES */
+
+/* UMRAH HERO LAYOUT - Desktop */
+.umrah-grid { 
+  display: grid; 
+  grid-template-columns: 1.4fr 1fr; 
+  gap: 1.5rem; 
+  align-items: center;
+  padding: 0;
+}
+
+.umrah-hero { padding: 0; }
+
+.umrah-image img { 
+  width: 100%; 
+  height: 750px; 
+  object-fit: cover; 
+  border-radius: 12px; 
+  display: block;
+}
+
+.umrah-content h1 { 
+  font-size: 32px; 
+  margin: 0 0 .6rem; 
+  color: #d4af37; 
+}
+
+.umrah-content h4 {
+  font-size: 18px;
+  color: #333;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.umrah-content p.muted { 
+  margin-bottom: 1rem; 
+  font-size: 16px;
+}
+
+.umrah-features { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0 0 1rem 0; 
+}
+
+.umrah-features li { 
+  margin: 0.4rem 0; 
+  padding-left: 1rem; 
+  position: relative; 
+  text-align: left;
+  font-size: 15px;
+}
+
+.umrah-features li::before { 
+  content: "✓"; 
+  font-weight: 700; 
+  position: absolute; 
+  left: 0; 
+  color: #d4af37; 
+}
+
+/* Mobile Responsive - Umrah Pages */
+@media (max-width: 768px) {
+  .umrah-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .umrah-image img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0%;
+    
+
+  }
+  
+  .umrah-content h1 {
+    font-size: 24px;
+    margin: 1rem 0 0.5rem 0;
+  }
+  
+  .umrah-content h4 {
+    font-size: 16px;
+  }
+  
+  .umrah-content p.muted {
+    font-size: 14px;
+  }
+  
+  .umrah-features li {
+    font-size: 14px;
+    margin: 0.3rem 0;
+  }
+  
+  .umrah-hero {
+    padding: 0rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .umrah-grid {
+    gap: 0.75rem;
+  }
+  
+  .umrah-image img {
+    height: 480px;
+    border-radius: 0%;
+    
+
+  }
+  
+  .umrah-content h1 {
+    font-size: 20px;
+  }
+  
+  .umrah-content h4 {
+    font-size: 14px;
+  }
+  
+  .umrah-content p.muted {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .umrah-features li {
+    font-size: 13px;
+    padding-left: 0.8rem;
+    margin: 0.25rem 0;
+  }
+}
+
+/*  css standard page */
+
+
+/*  css standard page                                    enddddd*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  css for hajj ajyad page    */
+
+.hajj-flow-section {
+  padding: 70px 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.hajj-flow-section h2 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.flow-scroll {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.flow-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.flow-scroll::-webkit-scrollbar-thumb {
+  background: #c2a14d;
+  border-radius: 10px;
+}
+
+.flow-item {
+  min-width: 200px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.flow-item img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.flow-item h3 {
+  margin: 10px 0 5px;
+}
+
+.flow-item span {
+  font-size: 13px;
+  color: #888;
+}
+
+.flow-item p {
+  font-size: 14px;
+  padding-bottom: 12px;
+  color: #555;
+}
+
+/* Hover Effect */
+.flow-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+/* Arrow */
+.flow-arrow svg {
+  width: 32px;
+  height: 32px;
+  stroke: #c2a14d;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hajj-hero {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+
+}
+
+.hajj-hero img {
+  width: 100%;
+  height: 105%;
+  object-fit: cover;
+ 
+  
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: top 100px
+}
+
+.hero-overlay h1 {
+  color:rgb(255, 255, 255);
+  text-shadow:2px 2px 4px rgba(212, 175, 55, 1);
+  font-size: 38px;
+  letter-spacing: 1px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hajj-details {
+  padding: 5px 5px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hajj-details h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d4af37;
+
+}
+
+.hajj-details p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hajj-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hajj-details li {
+  padding: 15px 0;
+  border-bottom: 1px dashed #ddd;
+  color: #444;
+}
+
+
+.hajj-flow-section h2 {
+    color: #d4af37;
+    
+    margin-top: 0px;
+
+}
+
+
+/*  css for hajj ajyad page  endsss   */
+
+
+
+
+/*  css for air ticketing starts   */
+
+
+
+
+/* HERO */
+.air-hero {
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7)),
+                url('airplane.jpg') center/cover no-repeat;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.air-hero h1 {
+    font-size: 36px;
+    color: #d4af37;
+}
+
+
+.air-hero p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* WHY US */
+.why-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-us h2 {
+    color: #d4af37;
+    margin-bottom: 40px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.reason-box {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+}
+.reason-box h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+
+.reason-box p {
+    color: #ddd;
+    margin-top: 10px;
+}
+/* FORM */
+.inquiry {
+    padding: 60px 20px;
+    background: #eae8e8;
+    text-align: center;
+}
+
+.inquiry h2 {
+    color: #d4af37;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #d4af37;
+    color: #000;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* WHATSAPP */
+.whatsapp-cta {
+    padding: 40px;
+    text-align: center;
+}
+
+.whatsapp-cta a {
+    background: #25d366;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  css for air ticketing endsss   */
+
+
+
+
+
+
+
+
+/*  css for passport and visa services starts  */
+
+
+
+/* HERO */
+.visa-hero {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255, 255)),
+                url('visa-bg.jpg') center/cover no-repeat;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.visa-hero h1 {
+    color: #d4af37;
+    font-size: 36px;
+}
+
+
+.visa-hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #000;
+}
+
+
+/* SERVICES */
+.visa-services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.visa-services h2 {
+    color: #d4af37;
+    margin-bottom: 40px;
+}
+
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.box h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+
+
+.box p {
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* COUNTRIES */
+.countries {
+    padding: 1px 1px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.countries h2 {
+    color: #d4af37;
+}
+
+.country-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.country {
+    background: #111;
+    padding: 15px 25px;
+    border-radius: 6px;
+}
+
+/* VISA TYPES */
+.visa-types {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.visa-types h2 {
+    color: #d4af37;
+}
+
+.visa-types ul {
+    list-style: none;
+    padding: 0;
+}
+
+.visa-types li {
+    margin: 10px 0;
+}
+
+/* FORM */
+.visa-inquiry {
+    background: #efefef;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.visa-inquiry h2 {
+    color: #d4af37;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background: #d4af37;
+    color: #000;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* WHATSAPP */
+.whatsapp-cta {
+    padding: 40px;
+    text-align: center;
+}
+
+.whatsapp-cta a {
+    background: #25d366;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* VISA COUNTRY IMAGES */
+.visa-images {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.visa-img-card {
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+}
+
+.visa-img-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.visa-img-card p {
+    margin: 0;
+    padding: 12px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+
+
+.visa-intro {
+    padding: 15px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+
+.visa-intro h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+
+.visa-intro p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+      color: #000000;
+}
+
+
+
+
+
+
+/*  css for passport and visa services ends  */
+
+
+
+
+
+
+/* css for FOREX CURRENCIES starts */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* HERO */
+.forex-hero {
+    padding: 0.1px 0.1px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.forex-hero h1 {
+    color: #d4af37;
+    font-size: 28px;
+}
+
+.forex-hero p {
+    color: #000000;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* SERVICES */
+.forex-services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.forex-services h2 {
+    color: #d4af37;
+    margin-bottom: 40px;
+}
+
+.forex-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* CURRENCIES */
+.forex-currencies {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.forex-currencies h2 {
+    color: #d4af37;
+}
+
+.forex-currencies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.forex-currencies li {
+    margin: 10px 0;
+}
+
+/* WHO */
+.forex-for {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* NOTE */
+.important-note {
+    background: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.important-note h2 {
+    color: #d4af37;
+}
+.important-note p {
+    color: #000;
+    font-weight: bold;
+}
+/* FORM */
+.forex-inquiry {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f3f3;
+}
+
+.forex-inquiry h2 {
+    color: #d4af37;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background: #d4af37;
+    color: #000;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+/* css for FOREX CURRENCIES ends */
+
+
+/* css for insurance starts  */
+
+
+/* HERO */
+.insurance-hero {
+    padding: 10px 10px;
+    text-align: center;
+    background: #ffffff;
+}
+.insurance-intro{
+    padding: 5px 5px;
+    text-align: center;
+    background: #ffffff;
+}
+.insurance-intro p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000;
+}
+
+.insurance-hero h1 {
+    color: #d4af37;
+    font-size: 36px;
+}
+.insurance-hero p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000;
+}
+
+
+.insurance-importance {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.insurance-importance h2 {
+    color: #d4af37;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.insurance-intro h2{
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+
+
+/* BOXES */
+.insurance-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+
+    
+}
+
+.box {
+    background: #111;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* css for insurance ends */
+
+
+
+/* css for Train booking starts */
+
+
+
+/* HERO */
+
+.train-hero {
+    padding: 10px 10px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.train-hero h1 {
+    color: #d4af37;
+    font-size: 36px;
+}
+
+.train-hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #000;
+}
+
+/* SECTIONS */
+.train-intro {
+    background: #f5f5f5;
+    padding: 1px;
+    margin:1px;
+    border-radius: 8px;
+}
+
+
+section {
+    padding: 10px 10px;
+    text-align: center;
+    /* margin-top: 1px; */
+}
+
+.train-intro h2 {
+    color: #d4af37;
+    margin-bottom: 25px;
+}
+.train-intro p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    color: #000;
+
+}
+/* PROCESS */
+.process-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* SERVICES */
+.train-content ul {
+    list-style: none;
+    padding: 0;
+   text-align: left ;
+    padding-left: 50px;
+    align-items: top;
+    margin-top: 1px;
+    background-color: #f5f5f5;
+    
+}
+
+.train-content li {
+    margin: 10px 0;
+    color: #000;
+    font-weight: bold;
+   
+}
+
+
+.train-services h2 {
+    color: #d4af37;
+    margin-bottom: 25px;
+    background-color: #f5f5f5;
+}
+.train-process h2 {
+    color: #d4af37;
+    margin-bottom: 25px;
+}
+
+
+/* FORM */
+.train-inquiry {
+    background: #f5f5f5;
+}
+.train-inquiry h2 {
+    color: #d4af37;
+    margin-bottom: 25px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #d4af37;
+    color: #000;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.train-info h2 {
+    color: #d4af37;
+    margin-bottom: 25px;
+}
+.train-info p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    color: #000;
+}   
+
+
+
+/* WHATSAPP */
+.whatsapp-cta {
+    padding: 40px;
+    text-align: center;
+}
+
+.whatsapp-cta a {
+    background: #25d366;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.trin-image img{
+    width: 30%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+}
+
+.train-content {
+    display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #f5f5f5;
+}
+
+
+
+
+
+
+
+
+
+/* css for Train booking ends */
+
+/* css for hotel  booking starts */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hotel-hero {
+    background: #f5f5f5;
+    color: #000000;
+    padding: 10px 10px;
+}
+
+.hotel-hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+.hotel-intro {
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+    
+    padding: 1px;
+}
+
+
+.hotel-support H2{
+    color: #d4af37;
+}
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.support-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category {
+    background: #111;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallery-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.destinations span {
+    display: inline-block;
+    background: #fff;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.why-us h2 {
+    margin-top: 1px;
+}
+
+
+
+
+.why-us li {
+    margin-bottom: 10px;
+}
+
+.hotel-inquiry form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 12px;
+}
+.hotel-inquiry label {
+ color: #9a9a9a;
+    text-align: left;
+    display: block;
+}
+
+.hotel-inquiry input,
+.hotel-inquiry textarea,
+.hotel-inquiry button {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.hotel-inquiry button {
+    background: #d4af37;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.important-note {
+    strong {
+        color: #d4af37;
+    }
+    background: #f5f5f5;
+    font-size: 14px;
+}
+
+.whatsapp-cta {
+    background: #25D366;
+    color: #fff;
+}
+
+.whatsapp-cta a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hotel-gallery h2 {
+    color: #d4af37;
+}
+
+.destinations span {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #000;
+}
+
+.hotel-destinations h2 {
+    color: #d4af37;
+}
+.why-us h2 {
+    color: #d4af37;
+}
+.hotel-inquiry h2 {
+    color: #d4af37;
+}
+
+   
+/* css for hotel booking ends */
